@@ -130,9 +130,60 @@ body {
 	background-color: #4c5e86;
 	color:black;
 }
+.imageMap{
+	height: 109px;
+width: 320px;
+}
+.spanHours{
+	float: left;
+font-weight: bolder;
+}
+.divArrowImg{
+	float:right;
+	margin-top: 18px;
+}
+.divSetAll{
+	clear: both;
+float: left;
+}
+.btnSetText{
+	padding-top: 1px !important;
+padding-bottom: 1px !important;
+background-color: #eb018c !important;
+}
+.divLocInfo{
+clear: both;
+float: left;
+height: 136px;
+margin-left: 8px;
+margin-top: 8px;
+border: 2px solid white;
+color: white;
+width: 94%;
+padding: 5px 3px;
+}
+.textSpanFont{
+	font-size: 14px !important;
+}
+#textSpanLocation{
+	font-size: 20px !important;
+font-weight: bolder;
+}
+.textSpanAddress{
+	clear: both;
+float: left;
+width: 147px;
+height: 57px;
+margin-top: 13px;
+}
 
-
-
+.textManWithInfo{
+	float: right;
+width: 130px;
+height: 57px;
+margin-top: 13px;
+padding: 0px 13px;
+}
 /* CSS for 360*480 */
 .dashdivgrpLarge {
 float: left;
