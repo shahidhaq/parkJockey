@@ -28,14 +28,14 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE  
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
- 
 * {
-    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+	font-family: Gotham;
 }
 
 body {
-    margin: 0px auto;
-    background-color:#222;
+	margin: 0px auto;
+	background-color: #222;
+	font-size: 0 !important;
 }
 
 .contents {
@@ -43,28 +43,84 @@ body {
 	display: -webkit-flex;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	height:320px;
+	height: 320px;
 }
 
 .content-padding {
-	margin-top: 16px;
+	margin-top: 8px;
 	margin-bottom: 16px;
 	padding-left: 16px;
 	padding-right: 16px;
 }
 
 .content_text {
-	font-weight:bold;
-	font-size:5em;
-	color:#fff;
+	font-weight: bold;
+	font-size: 5em;
+	color: #fff;
 }
 
 .ui-btn {
-	font-size:16px;
-	!important
+	font-size: 16px;
+	!
+	important
 }
 
 #resultBoard {
-	font-size:16px;
-	!important
+	font-size: 16px;
+	!
+	important
+}
+/*Added by ravi kumar */
+.imageCommon {
+	height: 70px;
+	width: 70px;
+}
+.dashContent{
+	background-color: #4c5e86;
+}
+.dashdivheader {
+	text-align: center;
+	line-height: 1px;
+	padding-bottom: 7px;
+}
+
+.imagedashleft {
+	float: left;
+	clear: both;
+}
+
+.imagedashrgt {
+	float: right;
+}
+
+.dashdivgrp {
+	float: left;
+	clear: both;
+	width: 100%;
+	padding: 0px 37px;
+	font-size: 18px;
+}
+
+.dashImageTextleft {
+	height: 88px;
+	width: 80px;
+	margin: 10px;
+	float: left;
+}
+
+.dashImageTextrgt {
+	height: 88px;
+	width: 80px;
+	margin: 10px;
+	float: right;
+}
+
+.imageWithTextleft {
+	padding-left: 8px;
+	line-height: 34px;
+}
+
+.imageWithTextrgt {
+	line-height: 34px;
+	padding-left: 19px;
 }

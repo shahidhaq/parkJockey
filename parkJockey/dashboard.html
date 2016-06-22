@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,user-scalable=no" />
+<title>Wearable UI</title>
+<link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
+<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)"
+	href="lib/tau/wearable/theme/default/tau.circle.min.css">
+<!-- load theme file for your application -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="ui-page ui-page-active" id="main">
+		<div class="ui-content dashContent">
+			<div id="dashBoardContents" class="ui-content content-padding"
+				style="">
+				<div class="dashdivheader">
+					<img src="images/pj_app_icon517x517 whtie.png" alt="Archieved"
+						class="imageCommon">
+				</div>
+				<hr>
+				<div class="dashdivgrp">
+					<div class="dashImageTextleft">
+						<img src="images/Explore.png" alt="explore"
+							class="imageCommon imagedashleft">
+							<div class="imageWithTextleft">EXPLORE</div>
+					</div>
+					<div class="dashImageTextrgt">
+						<img src="images/search.png" alt="search"
+							class="imageCommon imagedashrgt">
+							<div class="imageWithTextrgt">SEARCH</div>
+					</div>
+				</div>
+				<div class="dashdivgrp">
+					<div class="dashImageTextleft">
+						<img src="images/passes.png" alt="passes"
+							class="imageCommon imagedashleft">
+							<div class="imageWithTextleft">PASSES</div>
+					</div>
+					<div class="dashImageTextrgt">
+						<img src="images/calender.png" alt="calender"
+							class="imageCommon imagedashrgt">
+							<div class="imageWithTextrgt">EVENTS</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="toast" class="ui-popup ui-popup-toast">
+			<div id="toast-content" class="ui-popup-content"></div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="lib/tau/wearable/js/tau.min.js"></script>
+<script type="text/javascript" src="js/circle-helper.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<!-- load javascript file for your application -->
+<script src="js/main.js"></script>
+</html>
