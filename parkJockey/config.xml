@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/parkJockey" version="1.0.0" viewmodes="maximized">
-    <tizen:application id="bp3KZQw1ui.parkJockey" package="bp3KZQw1ui" required_version="2.3.1"/>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://developer.samsung.com/HelloAccessoryConsumer" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="VbsgE6bms2.HelloAccessoryConsumer" package="VbsgE6bms2" required_version="2.2"/>
     <content src="index.html"/>
-    <feature name="http://tizen.org/feature/screen.size.normal"/>
-    <icon src="icon.png"/>
-    <name>parkJockey</name>
-    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <feature name="http://developer.samsung.com/tizen/feature/network.accessory_protocol"/>
+    <icon src="icon.png" width="3"/>
+    <tizen:metadata key="AccessoryServicesLocation" value="res/xml/accessoryservices.xml"/>
+    <name>ParkJockey</name>
+    <tizen:privilege name="http://developer.samsung.com/privilege/accessoryprotocol"/>
     <tizen:profile name="wearable"/>
-    <tizen:setting hwkey-event="enable"/>
+    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
 </widget>
