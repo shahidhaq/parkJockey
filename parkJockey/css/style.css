@@ -101,6 +101,7 @@ body {
 	font-size: 18px;
 }
 
+
 .dashImageTextleft {
 	height: 88px;
 	width: 80px;
@@ -122,5 +123,27 @@ body {
 
 .imageWithTextrgt {
 	line-height: 34px;
-	padding-left: 19px;
+	padding-left: 18px;
+}
+
+
+
+/* CSS for 360*480 */
+.dashdivgrpLarge {
+float: left;
+clear: both;
+width: 100%;
+padding: 26px 37px;
+font-size: 18px;
+height: 146px;
+}
+
+.imageCommonLarge {
+height: 90px;
+width: 90px;
+margin-top: 14px;
+}
+.imageWithTextrgtLarge {
+	line-height: 34px;
+	padding-left: 5px;
 }

@@ -28,7 +28,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-
+var xResolution,yResolution;
 var SAAgent = null;
 var SASocket = null;
 var CHANNELID = 104;
@@ -127,12 +127,56 @@ function fetch() {
 	}
 }
 
+
+//to set height of main listing page according
+// to device resolution
+	function setHeightResolution(xResolution,yResolution){
+		debugger;
+		if(xResolution=="320" && yResolution=="320"){
+     	// document.getElementsByClassName(elementName)
+     	
+		}
+     else if(xResolution=="360" && yResolution=="480"){
+    	// alert("doing so");
+    	 $( ".dashdivgrp" ).removeClass("dashdivgrp").addClass("dashdivgrpLarge");
+    	 $( "img" ).removeClass(" imageCommon").addClass(" imageCommonLarge");
+    	 $( ".imageWithTextrgt" ).removeClass(" imageWithTextrgt").addClass(" imageWithTextrgtLarge");
+    	 
+     }else if(xResolution=="360" && yResolution=="360"){
+     	
+     }
+	}
+	
+	//Page Before Show Starts
+	var page=document.getElementById("main")
+	page.addEventListener("pagebeforeshow",function(e){
+		var xResolution=window.localStorage.getItem("xResolution");
+		var yResolution=window.localStorage.getItem("yResolution");
+		
+		//Setting changes for Screen resolutions
+		setHeightResolution(xResolution,yResolution);
+		
+		//page before show Ends
+	});
+	
 window.onload = function () {
     // add eventListener for tizenhwkey
     document.addEventListener('tizenhwkey', function(e) {
         if(e.keyName == "back")
             tizen.application.getCurrentApplication().exit();
     });
+    
+ // to get screen resolutions
+	    tizen.systeminfo.getPropertyValue("DISPLAY", function(disp) {
+	            xResolution=disp.resolutionWidth;
+	            window.localStorage.setItem("xResolution",xResolution);
+	            yResolution=disp.resolutionHeight;
+	            window.localStorage.setItem("yResolution",yResolution);
+	            setTimeout(function(){
+	            	 setHeightResolution(xResolution,yResolution);
+	            }, 1000);
+	           
+     });
 };
 
 (function(tau) {
