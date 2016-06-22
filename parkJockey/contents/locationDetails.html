@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,user-scalable=no" />
+<title>Wearable UI</title>
+<link rel="stylesheet" href="../lib/tau/wearable/theme/default/tau.min.css">
+<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)"
+	href="../lib/tau/wearable/theme/default/tau.circle.min.css">
+<!-- load theme file for your application -->
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div class="ui-page" id="locationDetails">
+		<div class="ui-content locDetailsContent">
+			<img src="../images/search.png" alt="search"
+							class="imageCommon imagedashrgt">
+		</div>
+		<div id="toast" class="ui-popup ui-popup-toast">
+			<div id="toast-content" class="ui-popup-content"></div>
+		</div>
+		<script src="locationDetails.js"></script>
+	</div>
+</body>
+<script type="text/javascript" src="../lib/tau/wearable/js/tau.min.js"></script>
+<script type="text/javascript" src="../js/circle-helper.js"></script>
+<script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+<!-- load javascript file for your application -->
+<script src="js/main.js"></script>
+</html>
