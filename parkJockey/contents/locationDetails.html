@@ -12,25 +12,55 @@
 </head>
 <body>
 	<div class="ui-page" id="locationDetails">
-		<div class="ui-content locDetailsContent">
+		<div class="ui-content locDetailsContent" id="hsectionchanger">
 			<div>
 				<img src="../images/sampleMap.JPG" alt="search" class="imageMap">
 			</div>
 			<div class="ui-grid-col-2">
-			<div id="2btnPopup-cancel" class="ui-btn btnSetText"><div class="divSetAll"><span>DURATION</span><br><span id="spanHours" class="spanHours">2 HOUR</span></div><div id="divArrowImg" class="divArrowImg"><img src="../images/angle-arrow-pointing-down.png"></div></div>
-            <div id="2btnPopup-ok" class="ui-btn btnSetText"><div class="divSetAll"><span>START</span><br><span id="spanHours" class="spanHours">NOW</span></div><div id="divArrowImg" class="divArrowImg"><img src="../images/angle-arrow-pointing-down.png"></div></div>
+				<div id="2btnPopup-cancel" class="ui-btn btnSetText">
+					<div class="divSetAll">
+						<span>DURATION</span><br> <span id="spanHours"
+							class="spanHours">2 HOUR</span>
+					</div>
+					<div id="divArrowImg" class="divArrowImg">
+						<img src="../images/angle-arrow-pointing-down.png">
+					</div>
+				</div>
+				<div id="2btnPopup-ok" class="ui-btn btnSetText">
+					<div class="divSetAll">
+						<span>START</span><br> <span id="spanHours" class="spanHours">NOW</span>
+					</div>
+					<div id="divArrowImg" class="divArrowImg">
+						<img src="../images/angle-arrow-pointing-down.png">
+					</div>
+				</div>
 			</div>
 			<div class="divLocInfo">
-			<span class="textSpanFont" id="textSpanLocation">LONDON WELBACK STREET-NCP</span>
-			<div>
-			<div class="textSpanAddress"><span class="textSpanFont">74-77 WELBECK STREET, LONDON</span></div>
-			<div class="textManWithInfo"><span><img src="../images/men.png"></span>
-			<div><h3>2 min</h3></div>
-			<span class="textSpanFont">To London</span>
-			</div>
-			</div>
-			</div>
+				<div class="infoLocation">
+					<span class="textSpanFont" id="textSpanLocation">LONDON
+						WELBACK STREET-NCP</span>
+					<div>
+						<div class="textSpanAddress">
+							<span class="textSpanFont">74-77 WELBECK STREET, LONDON</span>
+						</div>
+						<div class="textManWithInfo">
+							<span id="manImg"><img src="../images/men.png"></span>
+							<div class="textSpanFont">
+								<h3 class="lineHeightZero">2 min</h3>
+							</div>
+							<span class="textSpanFont lineHeightZero">To London</span>
+						</div>
+					</div>
 
+				</div>
+				<div class="divBtnWith">
+					<div id="bookBtnRate" class="ui-btn btnSetText">
+						<div class="divSetAll">
+							<span>BOOK FROM </span> <span>$16.00</span>
+						</div>
+					</div>
+				</div>
+			</div>
 
 		</div>
 		<div id="toast" class="ui-popup ui-popup-toast">

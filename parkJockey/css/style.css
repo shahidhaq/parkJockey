@@ -135,8 +135,9 @@ body {
 width: 320px;
 }
 .spanHours{
-	float: left;
+float: left;
 font-weight: bolder;
+line-height: 6px;
 }
 .divArrowImg{
 	float:right;
@@ -154,7 +155,7 @@ background-color: #eb018c !important;
 .divLocInfo{
 clear: both;
 float: left;
-height: 136px;
+height: 151px;
 margin-left: 8px;
 margin-top: 8px;
 border: 2px solid white;
@@ -166,8 +167,9 @@ padding: 5px 3px;
 	font-size: 14px !important;
 }
 #textSpanLocation{
-	font-size: 20px !important;
+	font-size: 18px !important;
 font-weight: bolder;
+padding-left: 3px;
 }
 .textSpanAddress{
 	clear: both;
@@ -184,6 +186,27 @@ height: 57px;
 margin-top: 13px;
 padding: 0px 13px;
 }
+ #manImg{
+ padding-left: 17px;
+ }
+ .lineHeightZero{
+ line-height: 0;
+ }
+ .infoLocation{
+ clear: both;
+height: 108px;
+ }
+ #bookBtnRate{
+ margin-left: 26px;
+margin-right: 26px;
+ }
+ 
+ .divBtnWith{
+ clear: both;
+height: 27px;
+}
+ 
+
 /* CSS for 360*480 */
 .dashdivgrpLarge {
 float: left;
