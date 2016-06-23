@@ -35,7 +35,7 @@
 body {
 	margin: 0px auto;
 	background-color: #222;
-	font-size: 0 !important;
+	font-size: 0 ;
 }
 
 .contents {
@@ -167,9 +167,12 @@ padding: 5px 3px;
 	font-size: 14px !important;
 }
 #textSpanLocation{
-	font-size: 18px !important;
+font-size: 18px !important;
 font-weight: bolder;
-padding-left: 3px;
+float: left;
+width: 289px;
+text-align:center;
+height: auto;
 }
 .textSpanAddress{
 	clear: both;
@@ -180,11 +183,9 @@ margin-top: 13px;
 }
 
 .textManWithInfo{
-	float: right;
+float: right;
 width: 130px;
-height: 57px;
-margin-top: 13px;
-padding: 0px 13px;
+height: auto;
 }
  #manImg{
  padding-left: 17px;
@@ -193,18 +194,49 @@ padding: 0px 13px;
  line-height: 0;
  }
  .infoLocation{
- clear: both;
+clear: both;
 height: 108px;
+width: 320px;
  }
  #bookBtnRate{
- margin-left: 26px;
-margin-right: 26px;
+margin-left: 37px;
+margin-right: 37px;
+padding-left: 41px;
  }
  
  .divBtnWith{
  clear: both;
 height: 27px;
+width: 320px;
 }
+
+.sectionchangermain{
+clear: both;
+height: 162px;
+border: 2px solid #fff;
+color: white;
+}
+
+.divNormal1{
+	clear: both;
+float: left;
+width: 344px;
+padding-top: 8px;
+}
+
+.textSpanAddress12{
+clear: both;
+float: left;
+width: 143px;
+text-align: center;
+height: auto;
+border-right: 2px solid white;
+margin-top: 18PX;
+}
+.divimg{
+	height: 109px;
+width: 100%;
+} 
  
 
 /* CSS for 360*480 */
@@ -226,3 +258,68 @@ margin-top: 14px;
 	line-height: 34px;
 	padding-left: 5px;
 }
+
+
+/*added by shahid-ul-haq */
+.exploreContent{
+	
+	background-color: rgb(94, 114, 165);
+}
+
+.exploreContent2{
+	background-color:rgb(94, 114, 165);
+	/* background-image: url(../images/london.jpg); */
+}
+.liItemsN{
+	
+border-bottom: solid;
+border-width: 1px;
+border-color: #eb018c;
+
+font-size: 31px !important;
+font-family: Gotham;
+font-weight: bold;
+margin-left: 16px;
+margin-right: 39px;
+}
+
+.imagexp{
+	height:130px;
+	width:100%
+}
+#cards{
+	background-color: #4c5e86;
+}
+.cardbtn{
+	background-color: rgb(41, 63, 111);
+font-weight: bold;
+font-size: 1.4rem !important;
+margin-bottom: 12px;
+margin-left: 20px;
+margin-right: 20px;
+border-radius: 17px;
+}
+.cardsContent{
+	padding-top: 14px;
+}
+.paydiv{
+	border-bottom: solid;
+border-width: 2px;
+padding-right: 7px;
+padding-top: 3px;
+border-bottom-color: rgb(175, 175, 236);
+}
+.dashImageTextleft2 {
+height: 88px;
+width: 80px;
+margin: 10px;
+float: right;
+}
+#googleMap{
+	width: 320px !important;
+height: 106px !important;
+position: relative !important;
+background-color: rgb(229, 227, 223) !important;
+overflow: hidden !important;
+}
+/* end by shahid */

@@ -156,6 +156,14 @@ function fetch() {
 		//Setting changes for Screen resolutions
 		setHeightResolution(xResolution,yResolution);
 		
+		var serachImg=document.getElementById("serachImg");
+		serachImg.addEventListener('click', function(){
+			alert("going");
+			tau.changePage("contents/googlemap.html");
+			
+		});
+		
+		
 		//page before show Ends
 	});
 	

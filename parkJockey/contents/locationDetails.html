@@ -12,10 +12,12 @@
 </head>
 <body>
 	<div class="ui-page" id="locationDetails">
-		<div class="ui-content locDetailsContent" id="hsectionchanger">
-			<div>
-				<img src="../images/sampleMap.JPG" alt="search" class="imageMap">
-			</div>
+		<div class="ui-content locDetailsContent">
+			 <div class="divimg">
+				<!-- <img src="../images/sampleMap.JPG" alt="search" class="imageMap"> -->
+				<div id="googleMap" style="width:320px;height:150px;"></div>
+			</div> 
+			<!-- <div id="googleMap" style="width:500px;height:380px;" class="imageMap"></div> -->
 			<div class="ui-grid-col-2">
 				<div id="2btnPopup-cancel" class="ui-btn btnSetText">
 					<div class="divSetAll">
@@ -35,30 +37,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="divLocInfo">
-				<div class="infoLocation">
-					<span class="textSpanFont" id="textSpanLocation">LONDON
-						WELBACK STREET-NCP</span>
-					<div>
-						<div class="textSpanAddress">
-							<span class="textSpanFont">74-77 WELBECK STREET, LONDON</span>
-						</div>
-						<div class="textManWithInfo">
-							<span id="manImg"><img src="../images/men.png"></span>
-							<div class="textSpanFont">
-								<h3 class="lineHeightZero">2 min</h3>
-							</div>
-							<span class="textSpanFont lineHeightZero">To London</span>
-						</div>
-					</div>
-
-				</div>
-				<div class="divBtnWith">
-					<div id="bookBtnRate" class="ui-btn btnSetText">
-						<div class="divSetAll">
-							<span>BOOK FROM </span> <span>$16.00</span>
-						</div>
-					</div>
+			<div id="sectionchanger" class="sectionchangermain">
+				<div id="testSection">
+				
 				</div>
 			</div>
 
@@ -72,6 +53,7 @@
 <script type="text/javascript" src="../lib/tau/wearable/js/tau.min.js"></script>
 <script type="text/javascript" src="../js/circle-helper.js"></script>
 <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+<script src="../js/googleMap.js"></script>
 <!-- load javascript file for your application -->
 <script src="js/main.js"></script>
 </html>
