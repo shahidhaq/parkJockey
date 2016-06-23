@@ -237,7 +237,20 @@ margin-top: 18PX;
 	height: 109px;
 width: 100%;
 } 
+
+.forpopUp{
+	background-color: white !important;
+color: black !important;
+/* width: 210px !important; */
+/* text-align: center !important; */
+/* margin-left: 55px !important; */
+}
  
+ .hoursli{
+ border-bottom: 1px solid rgb(226, 218, 218) !important;
+ font-size: 28px;
+padding: 5px 3px;
+ }
 
 /* CSS for 360*480 */
 .dashdivgrpLarge {
@@ -321,5 +334,36 @@ height: 106px !important;
 position: relative !important;
 background-color: rgb(229, 227, 223) !important;
 overflow: hidden !important;
+}
+ /* added for passes page */
+#passes{
+	background-color: #4c5e86;
+}
+.passAP{
+clear: both;
+float: left;
+height: 37px;
+width: auto;
+font-size: 28px;	
+background-color: rgb(50, 72, 121);
+border: 2px solid rgb(121, 145, 201);
+}
+.active{
+float: left;
+width: 48%;
+border-right: 2px solid rgb(128, 159, 228);
+border-radius: 9px;
+padding-left: 22px;
+}
+.all{
+	float: right;
+padding-right: 70px;
+}
+.head{
+	
+font-size: 34px;
+margin-left: 107px;
+font-weight: bold;
+
 }
 /* end by shahid */

@@ -9,14 +9,15 @@
 	href="../lib/tau/wearable/theme/default/tau.circle.min.css">
 <!-- load theme file for your application -->
 <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/Datetimepicker.css">
 </head>
 <body>
 	<div class="ui-page" id="locationDetails">
 		<div class="ui-content locDetailsContent">
-			 <div class="divimg">
+			<div class="divimg">
 				<!-- <img src="../images/sampleMap.JPG" alt="search" class="imageMap"> -->
-				<div id="googleMap" style="width:320px;height:150px;"></div>
-			</div> 
+				<div id="googleMap" style="width: 320px; height: 150px;"></div>
+			</div>
 			<!-- <div id="googleMap" style="width:500px;height:380px;" class="imageMap"></div> -->
 			<div class="ui-grid-col-2">
 				<div id="2btnPopup-cancel" class="ui-btn btnSetText">
@@ -28,9 +29,10 @@
 						<img src="../images/angle-arrow-pointing-down.png">
 					</div>
 				</div>
-				<div id="2btnPopup-ok" class="ui-btn btnSetText">
+				<div id="2btnPopup-ok" class="ui-btn btnSetText" >
+				<input type="hidden" id="dp" />
 					<div class="divSetAll">
-						<span>START</span><br> <span id="spanHours" class="spanHours">NOW</span>
+						<span>START</span><br> <span id="spanHours1" class="spanHours">NOW</span>
 					</div>
 					<div id="divArrowImg" class="divArrowImg">
 						<img src="../images/angle-arrow-pointing-down.png">
@@ -38,15 +40,47 @@
 				</div>
 			</div>
 			<div id="sectionchanger" class="sectionchangermain">
-				<div id="testSection">
-				
-				</div>
+				<div id="testSection"></div>
 			</div>
 
 		</div>
 		<div id="toast" class="ui-popup ui-popup-toast">
 			<div id="toast-content" class="ui-popup-content"></div>
 		</div>
+
+		<!--HTML code-->
+		<div id="hoursPopUp" class="ui-popup">
+			<div class="ui-popup-content forpopUp">
+				<ul>
+					<li class="hoursli" value=0.5 >0.5 Hour</li>
+					<li class="hoursli" value=1>1 Hour</li>
+					<li class="hoursli" value=2>2 Hour</li>
+					<li class="hoursli" value=3>3 Hour</li>
+					<li class="hoursli" value=4>4 Hour</li>
+					<li class="hoursli" value=5>5 Hour</li>
+					<li class="hoursli" value=6>6 Hour</li>
+					<li class="hoursli" value=7>7 Hour</li>
+					<li class="hoursli" value=8>8 Hour</li>
+					<li class="hoursli" value=9>9 Hour</li>
+					<li class="hoursli" value=10>10 Hour</li>
+					<li class="hoursli" value=11>11 Hour</li>
+					<li class="hoursli" value=12>12 Hour</li>
+					<li class="hoursli" value=13>13 Hour</li>
+					<li class="hoursli" value=14>14 Hour</li>
+					<li class="hoursli" value=15>15 Hour</li>
+					<li class="hoursli" value=16>16 Hour</li>
+					<li class="hoursli" value=17>17 Hour</li>
+					<li class="hoursli" value=18>18 Hour</li>
+					<li class="hoursli" value=19>19 Hour</li>
+					<li class="hoursli" value=20>20 Hour</li>
+					<li class="hoursli" value=21>21 Hour</li>
+					<li class="hoursli" value=22>22 Hour</li>
+					<li class="hoursli" value=23>23 Hour</li>
+					<li class="hoursli" value=24>24 Hour</li>
+				</ul>
+			</div>
+		</div>
+
 		<script src="locationDetails.js"></script>
 	</div>
 </body>
@@ -55,5 +89,9 @@
 <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
 <script src="../js/googleMap.js"></script>
 <!-- load javascript file for your application -->
-<script src="js/main.js"></script>
+<script src="../js/main.js"></script>
+<script type="text/javascript" src="../app.js"></script>
+<script type="text/javascript" src="../js/moment .js"></script>
+<script type="text/javascript" src="../js/ bootstrap-datetime.js"></script>
+
 </html>

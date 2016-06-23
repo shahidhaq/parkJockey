@@ -169,10 +169,20 @@ function fetch() {
 	
 window.onload = function () {
     // add eventListener for tizenhwkey
-    document.addEventListener('tizenhwkey', function(e) {
-        if(e.keyName == "back")
-            tizen.application.getCurrentApplication().exit();
-    });
+	window.addEventListener( 'tizenhwkey', function( ev ) {
+		if( ev.keyName === "back" ) {
+			var page = document.getElementsByClassName( 'ui-page-active' )[0],
+				pageid = page ? page.id : "";
+			if( pageid === "main" ) {
+				try {
+					tizen.application.getCurrentApplication().exit();
+				} catch (ignore) {
+				}
+			} else {
+				window.history.back();
+			}
+		}
+	} );
     
  // to get screen resolutions
 	    tizen.systeminfo.getPropertyValue("DISPLAY", function(disp) {
@@ -193,3 +203,5 @@ window.onload = function () {
 		setTimeout(function(){tau.closePopup();}, 3000);
 	}, false);
 })(window.tau);
+
+

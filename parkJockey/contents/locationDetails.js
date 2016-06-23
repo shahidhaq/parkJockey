@@ -2,12 +2,16 @@
  * 
  */
 (function(){
-	alert("OMG!!!");
+	//alert("OMG!!!");
 	debugger;
 	var page = document.getElementById( "locationDetails" ),
 	element = document.getElementById("sectionchanger"),
 	testSection=document.getElementById("testSection"),
 	sectionChanger, idx=1;
+	
+	   var lot=51.508742;
+	   var lan=-0.120850;
+	   var checkOne;
 
 	page.addEventListener("pageshow", function() {
 		debugger;
@@ -22,8 +26,8 @@
 		debugger;
 
 		var actualData=[{locationName:'LONDON WELBACK STREET-NCP',address:'74-77 WELBECK STREET, LONDON'},
-		                {locationName:'LONDON WELBACK STREET-NCP',address:'74-77 WELBECK STREET, LONDON'},
-		                {locationName:'LONDON WELBACK STREET-NCP',address:'74-77 WELBECK STREET, LONDON'}];
+		                {locationName:'PARIS WELBACK STREET-NCP',address:'74-77 WELBECK STREET, LONDON'},
+		                {locationName:'BARCELONA WELBACK STREET-NCP',address:'74-77 WELBECK STREET, LONDON'}];
 debugger;
 		for(var i = 0; i < actualData.length; i++) {
 			var section = document.createElement("section");
@@ -35,7 +39,8 @@ debugger;
 			var textSpanFont2=document.createElement("span");
 			textSpanFont2.setAttribute("class", "textSpanFont");
 			textSpanFont2.setAttribute("id", "textSpanLocation");
-			var locationTitle=document.createTextNode("LONDON	WELBACK STREET-NCP");
+			//var locationTitle=document.createTextNode("LONDON	WELBACK STREET-NCP");
+			var locationTitle=document.createTextNode(actualData[i].locationName);
 
 			textSpanFont2.appendChild(locationTitle);
 
@@ -117,15 +122,41 @@ debugger;
 			element.appendChild(testSection); 
 		}
 		
+		var durationChange = document.getElementById("2btnPopup-cancel");
+		durationChange.addEventListener("click", function(evt){
+			tau.openPopup("#hoursPopUp");
+		}); 
+		
+		$(".hoursli").click(function(){
+			alert(this.value);
+			$("#spanHours").html(this.value+" HOURS");
+			 tau.closePopup();
+			});
+		
+		$('#dp').datetimepicker();
+		$('#2btnPopup-ok').click(function(){
+		$('#dp').datepicker('show');
+		})
+		
+		
 		//Section Changer events
 		var changer = document.getElementById("sectionchanger");
 		   changer.addEventListener("sectionchange", function(evt) 
 		   {
-		     alert(evt.detail.active + " section is active.");
+		   //  alert(evt.detail.active + " section is active.");
+		     if(evt.detail.active==1){
+		    	 createMap(48.856614,2.3522219);
+		     }else if(evt.detail.active==2){
+		    	 createMap(41.3850639,2.1734035);
+		     }else{
+		    	 createMap(51.508742,-0.120850);
+		     }
 		     
 		   });
-		 fucntion createMap(){
-			 var myCenter=new google.maps.LatLng(51.508742,-0.120850);
+		   
+		
+		 function createMap(lot,lan){
+			 var myCenter=new google.maps.LatLng(lot,lan);
 				var marker;
 
 				function initialize()
@@ -147,27 +178,29 @@ debugger;
 				}
 				initialize(); 
 		 }  
-		   var myCenter=new google.maps.LatLng(51.508742,-0.120850);
-			var marker;
-
-			function initialize()
-			{
-			var mapProp = {
-			  center:myCenter,
-			  zoom:5,
-			  mapTypeId:google.maps.MapTypeId.ROADMAP
-			  };
-
-			var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-			var marker=new google.maps.Marker({
-			  position:myCenter,
-			  animation:google.maps.Animation.BOUNCE
-			  });
-
-			marker.setMap(map);
-			}
-			initialize();
+		 createMap(lot,lan);
+		 
+//		   var myCenter=new google.maps.LatLng(51.508742,-0.120850);
+//			var marker;
+//
+//			function initialize()
+//			{
+//			var mapProp = {
+//			  center:myCenter,
+//			  zoom:5,
+//			  mapTypeId:google.maps.MapTypeId.ROADMAP
+//			  };
+//
+//			var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+//
+//			var marker=new google.maps.Marker({
+//			  position:myCenter,
+//			  animation:google.maps.Animation.BOUNCE
+//			  });
+//
+//			marker.setMap(map);
+//			}
+//			initialize();
 			//google.maps.event.addDomListener(window, 'load', initialize);
 	});
 
