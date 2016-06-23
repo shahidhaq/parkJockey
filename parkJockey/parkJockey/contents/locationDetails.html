@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,user-scalable=no" />
+<title>Wearable UI</title>
+<link rel="stylesheet"
+	href="../lib/tau/wearable/theme/default/tau.min.css">
+<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)"
+	href="../lib/tau/wearable/theme/default/tau.circle.min.css">
+<!-- load theme file for your application -->
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div class="ui-page" id="locationDetails">
+		<div class="ui-content locDetailsContent">
+			 <div class="divimg">
+				<!-- <img src="../images/sampleMap.JPG" alt="search" class="imageMap"> -->
+				<div id="googleMap" style="width:320px;height:150px;"></div>
+			</div> 
+			<!-- <div id="googleMap" style="width:500px;height:380px;" class="imageMap"></div> -->
+			<div class="ui-grid-col-2">
+				<div id="2btnPopup-cancel" class="ui-btn btnSetText">
+					<div class="divSetAll">
+						<span>DURATION</span><br> <span id="spanHours"
+							class="spanHours">2 HOUR</span>
+					</div>
+					<div id="divArrowImg" class="divArrowImg">
+						<img src="../images/angle-arrow-pointing-down.png">
+					</div>
+				</div>
+				<div id="2btnPopup-ok" class="ui-btn btnSetText">
+					<div class="divSetAll">
+						<span>START</span><br> <span id="spanHours" class="spanHours">NOW</span>
+					</div>
+					<div id="divArrowImg" class="divArrowImg">
+						<img src="../images/angle-arrow-pointing-down.png">
+					</div>
+				</div>
+			</div>
+			<div id="sectionchanger" class="sectionchangermain">
+				<div id="testSection">
+				
+				</div>
+			</div>
+
+		</div>
+		<div id="toast" class="ui-popup ui-popup-toast">
+			<div id="toast-content" class="ui-popup-content"></div>
+		</div>
+		<script src="locationDetails.js"></script>
+	</div>
+</body>
+<script type="text/javascript" src="../lib/tau/wearable/js/tau.min.js"></script>
+<script type="text/javascript" src="../js/circle-helper.js"></script>
+<script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+<script src="../js/googleMap.js"></script>
+<!-- load javascript file for your application -->
+<script src="js/main.js"></script>
+</html>

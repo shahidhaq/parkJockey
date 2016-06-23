@@ -1,0 +1,325 @@
+/*    
+ * Copyright (c) 2014 Samsung Electronics Co., Ltd.   
+ * All rights reserved.   
+ *   
+ * Redistribution and use in source and binary forms, with or without   
+ * modification, are permitted provided that the following conditions are   
+ * met:   
+ *   
+ *     * Redistributions of source code must retain the above copyright   
+ *        notice, this list of conditions and the following disclaimer.  
+ *     * Redistributions in binary form must reproduce the above  
+ *       copyright notice, this list of conditions and the following disclaimer  
+ *       in the documentation and/or other materials provided with the  
+ *       distribution.  
+ *     * Neither the name of Samsung Electronics Co., Ltd. nor the names of its  
+ *       contributors may be used to endorse or promote products derived from  
+ *       this software without specific prior written permission.  
+ *  
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS  
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT  
+ * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR  
+ * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  
+ * OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,  
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT  
+ * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,  
+ * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY  
+ * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT  
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE  
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+* {
+	font-family: Gotham;
+}
+
+body {
+	margin: 0px auto;
+	background-color: #222;
+	font-size: 0 ;
+}
+
+.contents {
+	display: flex;
+	display: -webkit-flex;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	height: 320px;
+}
+
+.content-padding {
+	margin-top: 8px;
+	margin-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.content_text {
+	font-weight: bold;
+	font-size: 5em;
+	color: #fff;
+}
+
+.ui-btn {
+	font-size: 16px;
+	!
+	important
+}
+
+#resultBoard {
+	font-size: 16px;
+	!
+	important
+}
+/*Added by ravi kumar */
+.imageCommon {
+	height: 70px;
+	width: 70px;
+}
+.dashContent{
+	background-color: #4c5e86;
+}
+.dashdivheader {
+	text-align: center;
+	line-height: 1px;
+	padding-bottom: 7px;
+}
+
+.imagedashleft {
+	float: left;
+	clear: both;
+}
+
+.imagedashrgt {
+	float: right;
+}
+
+.dashdivgrp {
+	float: left;
+	clear: both;
+	width: 100%;
+	padding: 0px 37px;
+	font-size: 18px;
+}
+
+
+.dashImageTextleft {
+	height: 88px;
+	width: 80px;
+	margin: 10px;
+	float: left;
+}
+
+.dashImageTextrgt {
+	height: 88px;
+	width: 80px;
+	margin: 10px;
+	float: right;
+}
+
+.imageWithTextleft {
+	padding-left: 8px;
+	line-height: 34px;
+}
+
+.imageWithTextrgt {
+	line-height: 34px;
+	padding-left: 18px;
+}
+
+.locDetailsContent{
+	background-color: #4c5e86;
+	color:black;
+}
+.imageMap{
+	height: 109px;
+width: 320px;
+}
+.spanHours{
+float: left;
+font-weight: bolder;
+line-height: 6px;
+}
+.divArrowImg{
+	float:right;
+	margin-top: 18px;
+}
+.divSetAll{
+	clear: both;
+float: left;
+}
+.btnSetText{
+	padding-top: 1px !important;
+padding-bottom: 1px !important;
+background-color: #eb018c !important;
+}
+.divLocInfo{
+clear: both;
+float: left;
+height: 151px;
+margin-left: 8px;
+margin-top: 8px;
+border: 2px solid white;
+color: white;
+width: 94%;
+padding: 5px 3px;
+}
+.textSpanFont{
+	font-size: 14px !important;
+}
+#textSpanLocation{
+font-size: 18px !important;
+font-weight: bolder;
+float: left;
+width: 289px;
+text-align:center;
+height: auto;
+}
+.textSpanAddress{
+	clear: both;
+float: left;
+width: 147px;
+height: 57px;
+margin-top: 13px;
+}
+
+.textManWithInfo{
+float: right;
+width: 130px;
+height: auto;
+}
+ #manImg{
+ padding-left: 17px;
+ }
+ .lineHeightZero{
+ line-height: 0;
+ }
+ .infoLocation{
+clear: both;
+height: 108px;
+width: 320px;
+ }
+ #bookBtnRate{
+margin-left: 37px;
+margin-right: 37px;
+padding-left: 41px;
+ }
+ 
+ .divBtnWith{
+ clear: both;
+height: 27px;
+width: 320px;
+}
+
+.sectionchangermain{
+clear: both;
+height: 162px;
+border: 2px solid #fff;
+color: white;
+}
+
+.divNormal1{
+	clear: both;
+float: left;
+width: 344px;
+padding-top: 8px;
+}
+
+.textSpanAddress12{
+clear: both;
+float: left;
+width: 143px;
+text-align: center;
+height: auto;
+border-right: 2px solid white;
+margin-top: 18PX;
+}
+.divimg{
+	height: 109px;
+width: 100%;
+} 
+ 
+
+/* CSS for 360*480 */
+.dashdivgrpLarge {
+float: left;
+clear: both;
+width: 100%;
+padding: 26px 37px;
+font-size: 18px;
+height: 146px;
+}
+
+.imageCommonLarge {
+height: 90px;
+width: 90px;
+margin-top: 14px;
+}
+.imageWithTextrgtLarge {
+	line-height: 34px;
+	padding-left: 5px;
+}
+
+
+/*added by shahid-ul-haq */
+.exploreContent{
+	
+	background-color: rgb(94, 114, 165);
+}
+
+.exploreContent2{
+	background-color:rgb(94, 114, 165);
+	/* background-image: url(../images/london.jpg); */
+}
+.liItemsN{
+	
+border-bottom: solid;
+border-width: 1px;
+border-color: #eb018c;
+
+font-size: 31px !important;
+font-family: Gotham;
+font-weight: bold;
+margin-left: 16px;
+margin-right: 39px;
+}
+
+.imagexp{
+	height:130px;
+	width:100%
+}
+#cards{
+	background-color: #4c5e86;
+}
+.cardbtn{
+	background-color: rgb(41, 63, 111);
+font-weight: bold;
+font-size: 1.4rem !important;
+margin-bottom: 12px;
+margin-left: 20px;
+margin-right: 20px;
+border-radius: 17px;
+}
+.cardsContent{
+	padding-top: 14px;
+}
+.paydiv{
+	border-bottom: solid;
+border-width: 2px;
+padding-right: 7px;
+padding-top: 3px;
+border-bottom-color: rgb(175, 175, 236);
+}
+.dashImageTextleft2 {
+height: 88px;
+width: 80px;
+margin: 10px;
+float: right;
+}
+#googleMap{
+	width: 320px !important;
+height: 106px !important;
+position: relative !important;
+background-color: rgb(229, 227, 223) !important;
+overflow: hidden !important;
+}
+/* end by shahid */
