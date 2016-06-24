@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,user-scalable=no" />
+<title>Wearable UI</title>
+<link rel="stylesheet" href="../lib/tau/wearable/theme/default/tau.min.css">
+<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)"
+	href="../lib/tau/wearable/theme/default/tau.circle.min.css">
+<!-- load theme file for your application -->
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div class="ui-page" id="vehicles">
+	 <div class="paydiv payDivVehicles">
+	 	
+			<img src="../images/parking.png" alt="visa"
+				class="imgVehicle"><br>
+				<span class="parkingSpan">Vehicle Parking</span><span class="parkingSpanadd"><img src="../images/add.png" class="goico"></span>
+			
+	 </div>
+		<div class="ui-content vehiclesContent">
+			
+			<a href="cardDetails.html" class="ui-btn cardbtn"><span>Nisan</span><span class="spanArrow"><span class="spanVNO">ABC1223</span><img src="../images/go.png" class="goico"></span> </a>
+			<a href="cardDetails.html" class="ui-btn cardbtn"><span>BMW</span>  <span class="spanArrow"><span class="spanVNO">SD12S1</span><img src="../images/go.png" class="goico"></span></a>
+			<a href="cardDetails.html" class="ui-btn cardbtn"><span>Range Rover</span><span class="spanArrow"><span class="spanVNO">DF1D11</span><img src="../images/go.png" class="goico"></span> </a>
+		</div>
+	
+		<script src="vehicles.js"></script>
+	</div>
+</body>
+<script type="text/javascript" src="../lib/tau/wearable/js/tau.min.js"></script>
+<script type="text/javascript" src="../js/circle-helper.js"></script>
+<script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+<!-- load javascript file for your application -->
+<script src="js/main.js"></script>
+</html>

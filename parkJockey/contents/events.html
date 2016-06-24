@@ -3,31 +3,25 @@
 <head>
 <meta name="viewport" content="width=device-width,user-scalable=no" />
 <title>Wearable UI</title>
-<link rel="stylesheet" href="../lib/tau/wearable/theme/default/tau.min.css">
+<link rel="stylesheet"
+	href="../lib/tau/wearable/theme/default/tau.min.css">
 <link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)"
 	href="../lib/tau/wearable/theme/default/tau.circle.min.css">
 <!-- load theme file for your application -->
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-	<div class="ui-page" id="passes">
-	<div class="ui-header passHeader">
-	  <div class="head"> Passes </div>
-	
-	</div>
-	<div class="passAP">
-	<div class="active changeTab" id="ActivePasses">Active</div>
-	<div class="all" id="allPasses">All</div>
-	</div>
-		<div class="ui-content passesContent">
-			
-			<ul id="ListPassesA">
-			
-			</ul>
+	<div class="ui-page" id="events">
+		<div class="ui-header">
+			<div class="head">Events</div>
+
+		</div>
+		<div class="ui-content passesContent" style="font-size:20px">
+		<ul id="ListEventsA"></ul>
 			
 		</div>
-	
-		<script src="passes.js"></script>
+
+	<script src="events.js"></script>
 	</div>
 </body>
 <script type="text/javascript" src="../lib/tau/wearable/js/tau.min.js"></script>

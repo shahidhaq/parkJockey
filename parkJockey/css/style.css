@@ -86,7 +86,7 @@ body {
 
 .imagedashleft {
 	float: left;
-	clear: both;
+clear: both;
 }
 
 .imagedashrgt {
@@ -111,9 +111,9 @@ body {
 
 .dashImageTextrgt {
 	height: 88px;
-	width: 80px;
-	margin: 10px;
-	float: right;
+width: 85px;
+margin: 10px;
+float: right;
 }
 
 .imageWithTextleft {
@@ -166,26 +166,47 @@ padding: 5px 3px;
 .textSpanFont{
 	font-size: 14px !important;
 }
-#textSpanLocation{
+/* #textSpanLocation{
 font-size: 18px !important;
 font-weight: bolder;
 float: left;
 width: 289px;
 text-align:center;
 height: auto;
+} */
+#textSpanLocation {
+font-size: 20px !important;
+font-weight: bolder;
+float: left;
+width: 356px;
+text-align: center;
+height: auto;
 }
-.textSpanAddress{
+/* .textSpanAddress{
 	clear: both;
 float: left;
 width: 147px;
 height: 57px;
 margin-top: 13px;
+} */
+.textSpanAddress {
+clear: both;
+float: left;
+width: 355px;
+margin-top: 13px;
 }
 
-.textManWithInfo{
+/* .textManWithInfo{
 float: right;
 width: 130px;
 height: auto;
+} */
+.textManWithInfo {
+float: right;
+width: 149px;
+height: auto;
+padding-left: 26px;
+padding-top: 11px;
 }
  #manImg{
  padding-left: 17px;
@@ -193,28 +214,49 @@ height: auto;
  .lineHeightZero{
  line-height: 0;
  }
- .infoLocation{
+/*  .infoLocation{
 clear: both;
 height: 108px;
 width: 320px;
- }
- #bookBtnRate{
+ } */
+ .infoLocation {
+clear: both;
+height: 136px;
+width: 356px;
+}
+ /* #bookBtnRate{
 margin-left: 37px;
 margin-right: 37px;
 padding-left: 41px;
- }
+ } */
  
+ #bookBtnRate {
+margin-left: 24px;
+margin-right: 37px;
+padding-left: 66px;
+border-radius: 6px;
+}
+
  .divBtnWith{
  clear: both;
 height: 27px;
 width: 320px;
 }
 
-.sectionchangermain{
+/* .sectionchangermain{
 clear: both;
-height: 162px;
+height: 205px;
 border: 2px solid #fff;
 color: white;
+} */
+
+.sectionchangermain {
+clear: both;
+height: 205px;
+border: 2px solid #fff;
+color: white;
+margin: 9px;
+margin-top: 56px;
 }
 
 .divNormal1{
@@ -224,7 +266,7 @@ width: 344px;
 padding-top: 8px;
 }
 
-.textSpanAddress12{
+/* .textSpanAddress12{
 clear: both;
 float: left;
 width: 143px;
@@ -232,12 +274,25 @@ text-align: center;
 height: auto;
 border-right: 2px solid white;
 margin-top: 18PX;
+} */
+
+.textSpanAddress12 {
+clear: both;
+float: left;
+width: 173px;
+text-align: center;
+height: auto;
+border-right: 2px solid white;
+margin-top: 18PX;
 }
-.divimg{
+/* .divimg{
 	height: 109px;
 width: 100%;
+}  */
+.divimg{
+	height: 151px;
+width: 100%;
 } 
-
 .forpopUp{
 	background-color: white !important;
 color: black !important;
@@ -251,6 +306,31 @@ color: black !important;
  font-size: 28px;
 padding: 5px 3px;
  }
+ 
+ .changeTab{
+background-color: #eb018c !important;
+}
+
+.imageCommon1{
+margin: 11px 3px;
+}
+.spanPayment{
+font-size: 20px;
+text-align: center;
+margin-left: 110px;
+font-weight: bold;
+}
+
+.spanVNO{
+	
+}
+.btnPriceText{
+padding-top: 7px !important;
+padding-bottom: 7px !important;
+}
+.exploreScreeHeader{
+	background-color: #4c5e86;
+}
 
 /* CSS for 360*480 */
 .dashdivgrpLarge {
@@ -265,13 +345,18 @@ height: 146px;
 .imageCommonLarge {
 height: 90px;
 width: 90px;
-margin-top: 14px;
+
 }
 .imageWithTextrgtLarge {
 	line-height: 34px;
 	padding-left: 5px;
 }
-
+.sectionLocation{
+	height: 200px !important;
+}
+.testSection12{
+	height: 200px !important;
+}
 
 /*added by shahid-ul-haq */
 .exploreContent{
@@ -279,25 +364,34 @@ margin-top: 14px;
 	background-color: rgb(94, 114, 165);
 }
 
-.exploreContent2{
+/* .exploreContent2{
 	background-color:rgb(94, 114, 165);
-	/* background-image: url(../images/london.jpg); */
+	background-image: url(../images/london.jpg);
+} */
+
+.exploreContent2 {
+background-color: rgb(94, 114, 165);
+border-bottom: 8px solid rgb(94, 114, 165);
 }
+
 .liItemsN{
-	
 border-bottom: solid;
 border-width: 1px;
 border-color: #eb018c;
-
-font-size: 31px !important;
+font-size: 27px !important;
 font-family: Gotham;
-font-weight: bold;
 margin-left: 16px;
 margin-right: 39px;
+padding-top: 11px;
 }
 
-.imagexp{
+/* .imagexp{
 	height:130px;
+	width:100%
+} */
+
+.imagexp{
+	height:158px;
 	width:100%
 }
 #cards{
@@ -306,31 +400,76 @@ margin-right: 39px;
 .cardbtn{
 	background-color: rgb(41, 63, 111);
 font-weight: bold;
-font-size: 1.4rem !important;
-margin-bottom: 12px;
-margin-left: 20px;
+font-size: 19px !important;
+margin-bottom: 7px;
+margin-left: 18px;
 margin-right: 20px;
-border-radius: 17px;
+border-radius: 6px;
+height: 43px;
+padding-top: 8px !important;
+text-align: left;
 }
+
+#vehicles{
+	background-color: #4c5e86;
+}
+.spanArrow{
+	float:right;
+}
+
 .cardsContent{
 	padding-top: 14px;
 }
+.vehiclesContent{
+	padding-top: 14px;
+}
+.imgVehicle{
+	margin-bottom: 10px;
+}
+/* .parkingSpan{
+	font-size: 20px;
+} */
+
+.parkingSpan {
+font-size: 20px;
+padding-left: 59px;
+}
+.payDivVehicles{
+	text-align: center;
+}
+.parkingSpanadd{
+	float: right;
+padding-right: 16px;
+}
 .paydiv{
 	border-bottom: solid;
-border-width: 2px;
-padding-right: 7px;
-padding-top: 3px;
-border-bottom-color: rgb(175, 175, 236);
+border-width: 1px;
+padding: 17px 5px;
+border-bottom-color: #fff;
 }
+
+.paydiv1 {
+border-bottom: solid;
+border-width: 1px;
+padding: 20px 25px;
+border-bottom-color: #fff;
+}
+
 .dashImageTextleft2 {
 height: 88px;
 width: 80px;
 margin: 10px;
 float: right;
 }
-#googleMap{
+/* #googleMap{
 	width: 320px !important;
 height: 106px !important;
+position: relative !important;
+background-color: rgb(229, 227, 223) !important;
+overflow: hidden !important;
+} */
+#googleMap{
+	width: 361px !important;
 position: relative !important;
 background-color: rgb(229, 227, 223) !important;
 overflow: hidden !important;
@@ -346,18 +485,28 @@ height: 37px;
 width: auto;
 font-size: 28px;	
 background-color: rgb(50, 72, 121);
-border: 2px solid rgb(121, 145, 201);
+
 }
 .active{
 float: left;
 width: 48%;
-border-right: 2px solid rgb(128, 159, 228);
-border-radius: 9px;
 padding-left: 22px;
+background-color: rgb(182, 38, 123);
+padding-top: 5px;
+padding-bottom: 4px;
+}
+
+.passHeader{
+	background-color: #4c5e86 !important;
 }
 .all{
-	float: right;
+float: right;
 padding-right: 70px;
+width: 186px;
+background-color: rgb(182, 38, 123);
+text-align: center;
+padding-top: 5px;
+padding-bottom: 4px;
 }
 .head{
 	
@@ -366,4 +515,123 @@ margin-left: 107px;
 font-weight: bold;
 
 }
+.head2{
+	margin-left: 70px;
+}
+#details{
+	font-size: 20px;
+background-color: rgb(53, 74, 121);
+}
+.detailContent{
+	margin-left: 10px;
+}
+.h32{
+	font-size: 1.17em;
+margin: .5em 0;
+}
+.h42{
+	font-size: 1em;
+margin: .5em 0;
+margin-bottom: 1.2em;
+}
 /* end by shahid */
+
+/* media quries*/
+@media screen and (-tizen-geometric-shape: circle) {
+	
+	.ui-page.ui-scroll-on .ui-content {
+padding-bottom: 7.125rem;
+padding-top: 0;
+margin-top: 0;
+position: fixed;
+}
+.dashContent{
+	position: fixed;
+}
+.divimg {
+padding-left: 17px;
+}
+.infoLocation {
+
+padding-left: 34px;
+}
+	
+.divBtnWith {
+clear: both;
+height: 26px;
+width: 301px;
+}
+#bookBtnRate {
+padding-left: 17px;
+margin-left: 99px;
+}
+.sectionchangermain {
+
+border: 0px;
+
+}
+.textManWithInfo {
+
+margin-right: 36px;
+}
+#googleMap {
+width: 327px !important;
+height: 106px !important;
+
+}
+	.ui-grid-col-2>.ui-btn:first-child {
+
+padding-left: 46px;
+}
+.ui-grid-col-2>.ui-btn {
+
+padding-left: 28px;
+}
+.dashdivgrp {
+
+padding: 3px 68px;
+
+}
+
+.imageCommon {
+margin-top: 7px;
+}
+ul, li {
+margin-top: 1px;;
+margin-left: 22px;
+}
+.exploreContent2 {
+
+border-bottom: 2px solid;
+}
+.exploreContent{
+	height: 230px
+}
+.passAP {
+clear: both;
+float: left;
+height: 37px;
+width: 263px;
+font-size: 28px;
+background-color: rgb(50, 72, 121);
+border: 2px solid rgb(121, 145, 201);
+margin-left: 49px;
+margin-right: 39px;
+}
+.ui-header {
+height: 69px;
+line-height: 69px;
+background-color: transparent;
+margin-left: 19px;
+}
+#ListItems{
+overflow-y: scroll;
+height: 225px;
+	}
+	.liItemsN {
+
+font-size: 28px !important;
+font-family: Gotham;
+font-weight: normal;
+
+}

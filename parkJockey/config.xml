@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://developer.samsung.com/HelloAccessoryConsumer" version="1.0.0" viewmodes="maximized">
-    <access origin="*" subdomains="true"/>
+    <access origin="*" subdomains="true"></access>
     <tizen:application id="VbsgE6bms2.HelloAccessoryConsumer" package="VbsgE6bms2" required_version="2.2"/>
     <content src="dashboard.html"/>
     <feature name="http://developer.samsung.com/tizen/feature/network.accessory_protocol"/>

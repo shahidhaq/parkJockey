@@ -31,6 +31,7 @@
 debugger;
 		for(var i = 0; i < actualData.length; i++) {
 			var section = document.createElement("section");
+			section.setAttribute("class", "sectionLocation");
 			var divLocInfo=document.createElement("div");
 			divLocInfo.setAttribute("class", "divLocInfo");
 			var infoLocation=document.createElement("div");
@@ -86,7 +87,7 @@ debugger;
 			divBtnWith.setAttribute("class", "divBtnWith");
 			
 			var btnSetText=document.createElement("div");
-			btnSetText.setAttribute("class", "ui-btn btnSetText");
+			btnSetText.setAttribute("class", "ui-btn btnSetText btnPriceText");
 			btnSetText.setAttribute("id", "bookBtnRate");
 			
 			var divSetAll=document.createElement("div");
@@ -101,6 +102,11 @@ debugger;
 			spantestTextRate.setAttribute("class", "spantestText");
 			var spantestTextRateFor=document.createTextNode("$16.00");
 			spantestTextRate.appendChild(spantestTextRateFor);
+//			spantestTextRate.addEventListener('click', function(){
+//				tau.changePage("vehicles.html");
+//				
+//			});
+			
 			
 			divSetAll.appendChild(spantestText);
 			divSetAll.appendChild(spantestTextRate);
@@ -133,11 +139,12 @@ debugger;
 			 tau.closePopup();
 			});
 		
-		$('#dp').datetimepicker();
-		$('#2btnPopup-ok').click(function(){
-		$('#dp').datepicker('show');
-		})
-		
+		//$('#dp').datetimepicker();
+
+		//pay button 
+		$( ".spantestText").unbind('click').on("click", function(event) {	
+			tau.changePage("vehicles.html");
+		});
 		
 		//Section Changer events
 		var changer = document.getElementById("sectionchanger");

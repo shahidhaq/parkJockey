@@ -1,11 +1,12 @@
 (function(){
 	
 	alert("hello");
-	var page = document.getElementById( "cards" );
+	var page = document.getElementById( "vehicles" );
 	
 	page.addEventListener("pagebeforeshow", function() {
 		
-	});
 		
+	});
+	
 	
 })();

@@ -5,7 +5,7 @@
 	
 debugger;
 
-	var productList=["London","Barcelona","Columbus","Paris","Amesterdam"];
+	var productList=["London","Barcelona","Columbus","Paris","Amesterdam","Ohio","Sydney","Mexico","Malaysia"];
 	$(productList).each(function(i, el){
 	debugger;   
         var li = document.createElement('li');
